@@ -1,0 +1,55 @@
+.navHeader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #D4DFC7;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+}
+.navHeader a{
+  margin: 2vh 2vw 2vh 1vw;
+  padding: 0vh 1vw 0vh 1vw;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3vh;
+  font-family: sans-serif;
+}
+
+.navHeader a::before,
+.navHeader a::after{
+  content: "";
+  position: absolute;
+  height: 5vh;
+  width: 2px;
+  pointer-events: none;
+  background-color: #fff;
+  -webkit-transition: width, opacity, background-color;
+  -webkit-transition-duration: 500ms;
+}
+
+.navHeader a::before{
+  left: 0;
+  top: -1vh;
+
+}
+
+.navHeader a::after{
+  right: 0;
+  top: -1vh;
+}
+
+.navHeader a:hover::before,
+.navHeader a:hover::after{
+  content: "";
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  background-color: #6096BA;
+}

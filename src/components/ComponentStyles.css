@@ -1,3 +1,5 @@
+/*    Navigation Header   */
+
 .navHeader{
   position: absolute;
   top: 0;
@@ -11,7 +13,7 @@
   justify-content: center;
 }
 .navHeader a{
-  margin: 2vh 2vw 2vh 1vw;
+  margin: 2vh 2vw 1vh 2vw;
   padding: 0vh 1vw 0vh 1vw;
   position: relative;
   text-decoration: none;
@@ -34,22 +36,92 @@
 
 .navHeader a::before{
   left: 0;
-  top: -1vh;
+  top: -0.75vh;
 
 }
 
 .navHeader a::after{
   right: 0;
-  top: -1vh;
+  top: -0.75vh;
 }
 
 .navHeader a:hover::before,
 .navHeader a:hover::after{
   content: "";
   position: absolute;
-  height: 5vh;
   width: 100%;
   opacity: 0.1;
   pointer-events: none;
   background-color: #6096BA;
+}
+
+/*    Pages   */
+
+body{
+  background-color: #D4DFC7;
+  margin-top: 8vh;
+}
+
+/*    Footer    */
+
+footer{
+
+}
+
+/*    Home    */
+
+.home .left,
+.home .right{
+  position: absolute;
+  height: 105vh;
+  width: 10vw;
+  background-color: #fff;
+}
+
+.home .left{
+  left: 5vw;
+}
+
+.home .right{
+  right: 5vw;
+}
+
+.home .top{
+  position: absolute;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.home .bottom{
+  position: absolute;
+  top: 93vh;
+  left:0;
+  height: 10vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .navHeader{
+    height: 50px;
+  }
+
+  .navHeader a{
+    font-size: 18px;
+    margin: 5px 10px 10px 10px;
+  }
+
+  .navHeader a::before,
+  .navHeader a::after{
+    height: 17px;
+    top: 1px;
+  }
+
+  body{
+    margin-top: 30px;
+  }
 }

@@ -1,6 +1,7 @@
 import React, {Fragment, Component} from 'react';
 import * as routes from '../constants/routes'
-import './ComponentStyles.css'
+import './NavMobile.css'
+import './NavDesk.css'
 
 export default class Navigation extends Component {
   render() {

@@ -1,0 +1,51 @@
+@media only screen and (min-width: 600px) {
+
+  .navHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #D4DFC7;
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navHeader a{
+    font-size: 24px;
+    margin: 25px 20px 20px 20px;
+    padding: 0vh 10px 0vh 10px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+
+  }
+
+  .navHeader a::before,
+  .navHeader a::after{
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 2px;
+    pointer-events: none;
+    background-color: #fff;
+    -webkit-transition: width, opacity, background-color;
+    -webkit-transition-duration: 500ms;
+  }
+
+  .navHeader a::before{
+    left: -12px;
+    top: -2px;
+
+  }
+
+  .navHeader a::after{
+    right: 0;
+    top: -2px;
+  }
+
+}

@@ -1,20 +1,23 @@
-import React, { Fragment, Component } from 'react'
+import React, { Component } from 'react'
+import './HomeMobile.css'
+import './HomeDesk.css'
 
 export default class Home extends Component {
   render() {
     return (
       <body className="home">
+
         <div className="left"></div>
         <div className="right"></div>
         <div className="top"></div>
         <div className="bottom"></div>
 
-        <footer>
-          <p className="contact">Contact:</p>
+        <footer className="homeFooter">
+          <p>Contact:</p>
           <div className='footerContainer'>
             <div>
               <p>(360) 791-5099</p>
-              <p>EricRohner22@gmail.com</p>
+              <p className="divider">EricRohner22@gmail.com</p>
             </div>
             <div>
               <p>Marmelade District</p>

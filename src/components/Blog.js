@@ -1,11 +1,22 @@
-import React, { Fragment, Component } from 'react'
+import React, { Component } from 'react'
+import './BlogMobile.css'
+import './BlogDesk.css'
+
 
 export default class Blog extends Component {
   render() {
-    return (
-      <body className="blog">
-        <p>Blog</p>
-      </body>
-    )
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      return (
+        <body className="blogBody">
+          <p>Blog Desk</p>
+        </body>
+      )
+    } else {
+      return (
+        <body className="blogBody">
+          <p>Blog mobile</p>
+        </body>
+      )
+    }
   }
 }

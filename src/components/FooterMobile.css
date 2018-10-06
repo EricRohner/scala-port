@@ -1,0 +1,27 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: translate(0vw, 89vh);
+}
+
+.Footer p{
+  color: #274C77;
+  font-family: sans-serif;
+}
+
+.contact::before{
+  position: relative;
+  top: 100px;
+  left: -50px;
+  content: "";
+  height: 45px;
+  width: 2px;
+  background: #274C77;
+}
+
+.footerContainer{
+  justify-content: space-between;
+  display: flex;
+  width: 80vw;
+}

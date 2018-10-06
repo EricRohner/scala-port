@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './HomeMobile.css'
 import './HomeDesk.css'
+import Footer from "./Footer"
 
 export default class Home extends Component {
   render() {
@@ -12,19 +13,8 @@ export default class Home extends Component {
         <div className="top"></div>
         <div className="bottom"></div>
 
-        <footer className="homeFooter">
-          <p>Contact:</p>
-          <div className='footerContainer'>
-            <div>
-              <p>(360) 791-5099</p>
-              <p className="divider">EricRohner22@gmail.com</p>
-            </div>
-            <div>
-              <p>Marmelade District</p>
-              <p>Salt Lake City, UT</p>
-            </div>
-          </div>
-        </footer>
+        <Footer></Footer>
+
       </body>
     )
   }

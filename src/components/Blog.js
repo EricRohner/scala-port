@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './BlogMobile.css'
-import './BlogDesk.css'
+import '../mobileCSS/BlogMobile.css'
+import '../deskCSS/BlogDesk.css'
 
 
 export default class Blog extends Component {

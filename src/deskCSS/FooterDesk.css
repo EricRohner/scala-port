@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     -webkit-transform: translate(0vw, calc(90vh + 75px));
-    z-index: -1;
   }
 
   .Footer p {

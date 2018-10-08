@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './FooterMobile.css';
-import './FooterDesk.css'
+import '../mobileCSS/FooterMobile.css';
+import '../deskCSS/FooterDesk.css'
 
 export default class extends Component {
   render() {

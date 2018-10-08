@@ -6,7 +6,6 @@ import Home from './Home'
 import Blog from './Blog'
 import About from './About'
 
-
 class App extends Component {
   render() {
     return (
@@ -18,6 +17,8 @@ class App extends Component {
           <Route exact path={routes.BLOG} component={() => <Blog />} />
           <Route exact path={routes.ABOUT} component={() => <About />} />
         </div>
+
+
       </Router>
     )
   }

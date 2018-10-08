@@ -1,6 +1,6 @@
 @media only screen and (min-width: 600px) {
 
-  .navHeader{
+  .navHeader {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     z-index: 1;
   }
 
-  .navHeader a{
+  .navHeader a {
     font-size: 24px;
     margin: 25px 20px 20px 20px;
     padding: 0vh 10px 0vh 10px;
@@ -27,7 +27,7 @@
   }
 
   .navHeader a::before,
-  .navHeader a::after{
+  .navHeader a::after {
     content: "";
     position: absolute;
     height: 35px;
@@ -38,19 +38,19 @@
     -webkit-transition-duration: 500ms;
   }
 
-  .navHeader a::before{
+  .navHeader a::before {
     left: -11px;
     top: -4px;
 
   }
 
-  .navHeader a::after{
+  .navHeader a::after {
     right: 0;
     top: -4px;
   }
 
   .navHeader a:hover::before,
-  .navHeader a:hover::after{
+  .navHeader a:hover::after {
     content: "";
     position: absolute;
     width: calc(100% + 11px);

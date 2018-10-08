@@ -1,19 +1,19 @@
 @media only screen and (min-width: 600px) {
 
-  .blogBody{
+  .blogBody {
     padding: 0;
-    margin:0;
-    top:75px;
-    left:0px;
+    margin: 0;
+    top: 75px;
+    left: 0px;
     position: absolute;
     background: #D4DFC7;
-    height:100vh;
+    height: 100vh;
     width: 102vw;
   }
-  .blogbody p{
+
+  .blogbody p {
     color: black;
     -webkit-transform: translate(0vw 50vh);
   }
-
 
 }

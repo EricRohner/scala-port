@@ -8,7 +8,7 @@ export default class Home extends Component {
   constructor() {
     super()
 
-    this.state = { x1: 160, x2: 167, x3: 174, x4: 144, y1: 107, y2: 118, y3: 127, y4: 80, }
+    this.state = { x1: 149, x2: 157, x3: 157, x4: 154, y1: 156, y2: 161, y3: 163, y4: 84 }
   }
 
   handleMouseMove = (event) => {
@@ -29,6 +29,7 @@ export default class Home extends Component {
       x4: Math.sin(widthSin + 2.35) * iw * 1.75 + widthOffset,
       y4: Math.sin(heightSin + 2.35) * ih * 1.75 + 75,
     })
+    console.log(this.state)
   }
 
   render() {

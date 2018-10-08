@@ -1,13 +1,13 @@
 @media only screen and (min-width: 600px) {
 
-  .home{
-    margin:0;
-    padding:0;
-    left:0;
-    top:0;
-    position:absolute;
+  .home {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
     height: calc(100vh + 75px);
-    width:100vw;
+    width: 100vw;
     background-color: #D4DFC7;
     z-index: 0;
   }

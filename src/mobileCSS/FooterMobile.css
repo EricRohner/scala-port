@@ -5,12 +5,12 @@
   -webkit-transform: translate(0vw, 89vh);
 }
 
-.Footer p{
+.Footer p {
   color: #274C77;
   font-family: sans-serif;
 }
 
-.contact::before{
+.contact::before {
   position: relative;
   top: 100px;
   left: -50px;
@@ -20,7 +20,7 @@
   background: #274C77;
 }
 
-.footerContainer{
+.footerContainer {
   justify-content: space-between;
   display: flex;
   width: 80vw;

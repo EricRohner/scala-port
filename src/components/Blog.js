@@ -8,7 +8,9 @@ export default class Blog extends Component {
     if (window.matchMedia('(min-width: 600px)').matches) {
       return (
         <body className="blogBody">
-          <p>Blog Desk</p>
+          <div className="bleft"></div>
+          <div className="btop"></div>
+
         </body>
       )
     } else {

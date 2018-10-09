@@ -8,12 +8,25 @@
     position: absolute;
     background: #D4DFC7;
     height: 100vh;
-    width: 102vw;
+    width: 100vw;
   }
 
-  .blogbody p {
-    color: black;
-    -webkit-transform: translate(0vw 50vh);
+  .bleft,
+  .btop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white
+  }
+
+  .btop {
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .bleft {
+    height: 100vh;
+    width: 10vw;
   }
 
 }

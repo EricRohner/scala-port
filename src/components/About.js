@@ -12,7 +12,7 @@ export default class About extends Component {
   handleMouseMove = (event) => {
     const widthSin = event.clientX / window.innerWidth
     const heightSin = event.clientY / window.innerHeight
-    const heightOffset = window.innerHeight / 10 + 60
+    const heightOffset = window.innerHeight / 10 -15
     const widthOffset = window.innerWidth / 10
     const iw = window.innerWidth / 100
     const ih = window.innerHeight / 100
@@ -25,7 +25,7 @@ export default class About extends Component {
       x3: Math.sin(widthSin + 1.57) * iw + widthOffset,
       y3: Math.sin(heightSin + 1.57) * ih + heightOffset - 20,
       x4: Math.sin(widthSin + 2.35) * iw * 1.75 + widthOffset,
-      y4: Math.sin(heightSin + 2.35) * ih * 1.75 + 75,
+      y4: Math.sin(heightSin + 2.35) * ih * 1.75 ,
     })
   }
 
@@ -79,6 +79,11 @@ export default class About extends Component {
 
           <Footer />
         </body>
+      )
+    }
+    else{
+      return(
+        <div>About Mobile</div>
       )
     }
   }

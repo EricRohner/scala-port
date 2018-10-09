@@ -11,15 +11,11 @@ class App extends Component {
     return <BrowserRouter>
       <div>
         <Navigation />
-
         <Route exact path={routes.HOME} component={() => <Home />} />
         <Route exact path={routes.BLOG} component={() => <Blog />} />
         <Route exact path={routes.ABOUT} component={() => <About />} />
       </div>
-
-
     </BrowserRouter>
   }
 }
-
 export default App

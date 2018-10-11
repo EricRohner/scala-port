@@ -8,23 +8,27 @@ export default class Blog extends Component {
       return (
         <body className="blogBody">
           <div className="bLeft">
-            <div className="hoverDiv">
-              <p>Patty's Ridge</p>
+            <div className="hoverPatty">
+              <p className="hoverP">Patty's Ridge</p>
               <div className="pattyImg">
                 <img src="/blog/pattyfull.jpg" />
                 <img src="/blog/patty.jpg" />
                 <img src="/blog/pattytop.jpg" />
               </div>
             </div>
-            <div className="hoverDiv">
+            <div className="hoverBuena">
               <p className="hoverP">Buena Vista</p>
-              {/*<div className="buenaImg">*/}
-                {/*<img src="/blog/buenavistafull.jpg" />*/}
-                {/*<img src="/blog/buenavistatop.jpg" />*/}
-              {/*</div>*/}
+              <div className="buenaImg">
+                <img src="/blog/buenavistafull.jpg" />
+                <img src="/blog/buenavistatop.jpg" />
+              </div>
             </div>
-            <div className="hoverDiv">
+            <div className="hoverSteort">
               <p className="hoverP">Steort's Ridge</p>
+              <div className="steortImg">
+                <img src="/blog/steortbase.jpg" />
+                <img src="/blog/steortp3.jpg" />
+              </div>
             </div>
           </div>
 

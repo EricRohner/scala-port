@@ -7,8 +7,11 @@ export default class Home extends Component {
 
   constructor() {
     super()
-
-    this.state = { x1: 149, x2: 157, x3: 157, x4: 154, y1: 156, y2: 161, y3: 163, y4: 84 }
+    console.log(window.innerHeight)
+    this.state = {
+      x1: 149,
+      x2: 157, x3: 157, x4: 154, y1: 81, y2: 86, y3: 88, y4: window.innerHeight * 14 / 803
+    }
   }
 
   handleMouseMove = (event) => {
@@ -17,7 +20,7 @@ export default class Home extends Component {
     const heightOffset = window.innerHeight / 10
     const widthOffset = window.innerWidth / 10
     const iw = window.innerWidth / 100
-    const ih = window.innerHeight /100
+    const ih = window.innerHeight / 100
 
     this.setState({
       x1: Math.sin(widthSin) * iw + widthOffset,
@@ -29,7 +32,6 @@ export default class Home extends Component {
       x4: Math.sin(widthSin + 2.35) * iw * 1.75 + widthOffset,
       y4: Math.sin(heightSin + 2.35) * ih * 1.75 + 5,
     })
-    console.log(this.state)
   }
 
   render() {
@@ -37,10 +39,10 @@ export default class Home extends Component {
       return (
         <body className="home" onMouseMove={this.handleMouseMove}>
 
-          <div className="hleft"></div>
-          <div className="hright"></div>
-          <div className="htop"></div>
-          <div className="hbottom"></div>
+          <div className="hLeft"></div>
+          <div className="hRight"></div>
+          <div className="hTop"></div>
+          <div className="hBottom"></div>
 
           <img src="/home/Layer1.png"
                alt=""

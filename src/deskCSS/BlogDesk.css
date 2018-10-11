@@ -11,22 +11,96 @@
     width: 100vw;
   }
 
-  .bleft,
-  .btop {
+  .bLeft,
+  .bTop {
     position: absolute;
     top: 0px;
     left: 0px;
     background-color: white
   }
 
-  .btop {
+  .bTop {
+    padding: 0;
     height: 10vh;
     width: 100vw;
+    z-index: 0;
   }
 
-  .bleft {
+  .bLeft {
     height: 100vh;
-    width: 10vw;
+    width: 150px;
+    left: 5vw;
+    z-index: 1;
+  }
+
+
+  .hoverDiv {
+    -webkit-transform: translate(0vw, 10vh);
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #274C77;
+  }
+
+  .hoverDiv p::before,
+  .hoverDiv p::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    height: 35px;
+    width: 100%;
+    background: #6096BA;
+    pointer-events: none;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-property: opacity, transform;
+    -webkit-transition-duration: 350ms, 1000ms;
+  }
+
+  .hoverDiv p::before {
+    left: 0;
+    -webkit-transform: translate(0px, -10px);
+    opacity: 0;
+  }
+
+  .hoverDiv p::after {
+    right: 0;
+    -webkit-transform: translate(0px, -10px);
+    opacity: 0;
+  }
+
+  .hoverDiv p:hover::before {
+    left: 0;
+    -webkit-transform: translate(5px, -15px);
+    opacity: 0.2;
+  }
+
+  .hoverDiv p:hover::after {
+    left: 0;
+    -webkit-transform: translate(-5px, -5px);
+    opacity: 0.2;
+  }
+
+  .pattyImg {
+    position: absolute;
+    display: flex;
+    top:0px;
+    left: 160px;
+    pointer-events: none;
+    opacity: 0;
+    width:100vw;
+    -webkit-transition-property: opacity;
+    -webkit-transition-delay: 250ms;
+    -webkit-transition-duration: 500ms
+  }
+
+  .pattyImg img {
+    margin-left: 10px;
+  }
+
+  .hoverDiv:hover .pattyImg {
+    opacity: 1;
   }
 
 }

@@ -15,10 +15,10 @@
   .homePics img{
   }
 
-  .htop,
-  .hbottom,
-  .hright,
-  .hleft {
+  .hTop,
+  .hBottom,
+  .hRight,
+  .hLeft {
     background-color: white;
     position: absolute;
     padding: 0;
@@ -30,31 +30,31 @@
     z-index: 2;
   }
 
-  .htop, .hbottom {
+  .hTop, .hBottom {
     height: 10vh;
     width: 100vw;
   }
 
-  .htop{
+  .hTop,
+  .hRight{
     z-index: 2;
   }
 
-  .hbottom{
+  .hBottom{
     top: 80vh;
   }
 
-  .hleft, .hright{
+  .hLeft, .hRight{
     width: 10vw;
     height: 100vh;
   }
 
-  .hleft{
+  .hLeft{
     left: 5vw;
   }
 
-  .hright{
+  .hRight{
     right: 5vw;
-    z-index: 2;
   }
 
 }

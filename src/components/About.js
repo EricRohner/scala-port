@@ -6,7 +6,7 @@ import '../deskCSS/AboutDesk.css'
 export default class About extends Component {
   constructor() {
     super()
-    this.state = { x1: 152, x2: 158, x3: 155, x4: 148, y1: 141, y2: 146, y3: 128, y4: 84 }
+    this.state = { x1: 152, x2: 158, x3: 155, x4: 148, y1: 66, y2: 75, y3: 53, y4: 9 }
   }
 
   handleMouseMove = (event) => {
@@ -34,10 +34,10 @@ export default class About extends Component {
       return (
         <body className="about">
           <div onMouseMove={this.handleMouseMove}>
-            <div className='atop'></div>
-            <div className='abottom'></div>
-            <div className='aright'></div>
-            <div className='aleft'>
+            <div className='aTop'></div>
+            <div className='aBottom'></div>
+            <div className='aRight'></div>
+            <div className='aLeft'>
             </div>
             <img src="/about/Layer1.png"
                  alt=""

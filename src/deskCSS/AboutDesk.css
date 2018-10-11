@@ -11,10 +11,10 @@
     background-color: #D4DFC7;
   }
 
-  .atop,
-  .abottom,
-  .aright,
-  .aleft {
+  .aTop,
+  .aBottom,
+  .aRight,
+  .aLeft {
     background-color: white;
     position: absolute;
     padding: 0;
@@ -22,26 +22,26 @@
     z-index: 3;
   }
 
-  .atop,
-  .abottom {
+  .aTop,
+  .aBottom {
     height: 10vh;
     width: 100vw;
   }
 
-  .abottom {
+  .aBottom {
     top: 80vh;
   }
 
-  .aleft, .aright {
+  .aLeft, .aRight {
     width: 10vw;
     height: 100vh;
   }
 
-  .aleft {
+  .aLeft {
     left: 5vw;
   }
 
-  .aright {
+  .aRight {
     right: 5vw;
   }
 

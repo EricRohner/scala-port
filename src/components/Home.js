@@ -9,8 +9,14 @@ export default class Home extends Component {
     super()
     console.log(window.innerHeight)
     this.state = {
-      x1: 149,
-      x2: 157, x3: 157, x4: 154, y1: 81, y2: 86, y3: 88, y4: window.innerHeight * 14 / 803
+      x1: window.innerWidth * 149 / 1400,
+      x2: window.innerWidth * 157 / 1400,
+      x3: window.innerWidth * 157 / 1400,
+      x4: window.innerWidth * 154 / 1400,
+      y1: window.innerHeight * 81 / 803,
+      y2: window.innerHeight * 86 / 803,
+      y3: window.innerHeight * 88 / 803,
+      y4: window.innerHeight * 14 / 803
     }
   }
 

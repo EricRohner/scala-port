@@ -6,7 +6,15 @@ import '../deskCSS/AboutDesk.css'
 export default class About extends Component {
   constructor() {
     super()
-    this.state = { x1: 152, x2: 158, x3: 155, x4: 148, y1: 66, y2: 75, y3: 53, y4: 9 }
+    this.state = {
+      x1: window.innerWidth * 152 / 1400,
+      x2: window.innerWidth * 158 / 1400,
+      x3: window.innerWidth * 155 / 1400,
+      x4: window.innerWidth * 148 / 1400,
+      y1: window.innerHeight * 66 / 803,
+      y2: window.innerHeight * 75 / 803,
+      y3: window.innerHeight * 53 / 803,
+      y4: window.innerHeight * 9 / 803 }
   }
 
   handleMouseMove = (event) => {

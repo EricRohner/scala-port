@@ -33,18 +33,6 @@
     z-index: 1;
   }
 
-  .hoverPatty,
-  .hoverBuena,
-  .hoverSteort {
-    -webkit-transform: translate(0vw, 10vh);
-    height: 20px;
-    margin-top: 10px;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: #274C77;
-  }
-
   .hoverP::before,
   .hoverP::after {
     content: "";
@@ -83,9 +71,27 @@
     opacity: 0.2;
   }
 
+  .hoverPatty,
+  .hoverBuena,
+  .hoverSteort,
+  .hoverVector,
+  .hoverStandard,
+  .hoverOutside{
+    -webkit-transform: translate(0vw, 10vh);
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #274C77;
+  }
+
   .pattyImg,
   .buenaImg,
-  .steortImg{
+  .steortImg,
+  .vectorImg,
+  .standardImg,
+  .outsideImg{
     position: absolute;
     display: flex;
     top: 0px;
@@ -98,23 +104,41 @@
     -webkit-transition-duration: 500ms
   }
 
-  .buenaImg {
+  .vectorImg {
     -webkit-transform: translate(0vw, -35px);
   }
 
-  .steortImg {
+  .buenaImg {
     -webkit-transform: translate(0vw, -70px);
+  }
+
+  .steortImg {
+    -webkit-transform: translate(0vw, -105px);
+  }
+
+  .standardImg {
+    -webkit-transform: translate(0vw, -140px);
+  }
+
+  .outsideImg {
+    -webkit-transform: translate(0vw, -175px);
   }
 
   .pattyImg img,
   .buenaImg img,
-  .steortImg img{
+  .steortImg img,
+  .vectorImg img,
+  .standardImg img,
+  .outsideImg img{
     margin-left: 10px;
   }
 
   .hoverPatty:hover .pattyImg,
   .hoverBuena:hover .buenaImg,
-  .hoverSteort:hover .steortImg{
+  .hoverSteort:hover .steortImg,
+  .hoverVector:hover .vectorImg,
+  .hoverStandard:hover .standardImg,
+  .hoverOutside:hover .outsideImg{
     opacity: 1;
   }
 

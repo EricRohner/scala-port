@@ -16,6 +16,14 @@ export default class Blog extends Component {
                 <img src="/blog/pattytop.jpg" />
               </div>
             </div>
+            <div className="hoverVector">
+              <p className="hoverP">Vector Madness</p>
+              <div className="vectorImg">
+                <img src="/blog/vectorbase.jpg" />
+                <img src="/blog/vectortraverse.jpg" />
+                <img src="/blog/vectortop.jpg" />
+              </div>
+            </div>
             <div className="hoverBuena">
               <p className="hoverP">Buena Vista</p>
               <div className="buenaImg">
@@ -30,6 +38,22 @@ export default class Blog extends Component {
                 <img src="/blog/steortp3.jpg" />
               </div>
             </div>
+            <div className="hoverStandard">
+              <p className="hoverP">Standard Ridge</p>
+              <div className="standardImg">
+                <img src="/blog/standardp3.jpg" />
+                <img src="/blog/standardlichen.jpg" />
+                <img src="/blog/standardtop.jpg" />
+              </div>
+            </div>
+            <div className="hoverOutside">
+              <p className="hoverP">Outside Corner</p>
+              <div className="outsideImg">
+                <img src="/blog/outsidetop.jpg" />
+                <img src="/blog/outsidewave.jpg" />
+              </div>
+            </div>
+
           </div>
 
 

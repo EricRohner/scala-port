@@ -9,6 +9,7 @@
     background: #D4DFC7;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
   }
 
   .bLeft,
@@ -16,7 +17,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: white
+    background-color: white;
   }
 
   .bTop {
@@ -76,7 +77,7 @@
   .hoverSteort,
   .hoverVector,
   .hoverStandard,
-  .hoverOutside{
+  .hoverOutside {
     -webkit-transform: translate(0vw, 10vh);
     height: 20px;
     margin-top: 10px;
@@ -91,7 +92,7 @@
   .steortImg,
   .vectorImg,
   .standardImg,
-  .outsideImg{
+  .outsideImg {
     position: absolute;
     display: flex;
     top: 0px;
@@ -129,7 +130,7 @@
   .steortImg img,
   .vectorImg img,
   .standardImg img,
-  .outsideImg img{
+  .outsideImg img {
     margin-left: 10px;
   }
 
@@ -138,7 +139,7 @@
   .hoverSteort:hover .steortImg,
   .hoverVector:hover .vectorImg,
   .hoverStandard:hover .standardImg,
-  .hoverOutside:hover .outsideImg{
+  .hoverOutside:hover .outsideImg {
     opacity: 1;
   }
 

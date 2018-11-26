@@ -39,8 +39,8 @@ export default class Home extends Component {
     });
   };
   handleOrientation = event => {
-    const widthSin = event.alpha / window.innerWidth;
-    const heightSin = event.beta / window.innerHeight;
+    const widthSin = event.alpha;
+    const heightSin = event.beta;
     const heightOffset = window.innerHeight / 10;
     const widthOffset = window.innerWidth / 10;
     const iw = window.innerWidth / 100;
@@ -116,7 +116,11 @@ export default class Home extends Component {
         </body>
       );
     } else {
-      window.addEventListener("deviceorientation", handleOrientation, true);
+      window.addEventListener(
+        "deviceorientation",
+        this.handleOrientation,
+        true
+      );
       return (
         <body className="home">
           <div className="hLeft" />

@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import '../mobileCSS/BlogMobile.css'
-import '../deskCSS/BlogDesk.css'
+import React, { Component } from "react";
+//import '../mobileCSS/BlogMobile.css'
+import "../deskCSS/BlogDesk.css";
 
 export default class Blog extends Component {
   render() {
-    if (window.matchMedia('(min-width: 600px)').matches) {
+    if (window.matchMedia("(min-width: 600px)").matches) {
       return (
         <body className="blogBody">
           <div className="bLeft">
@@ -53,19 +53,17 @@ export default class Blog extends Component {
                 <img src="/blog/outsidewave.jpg" />
               </div>
             </div>
-
           </div>
 
-
-          <div className="bTop"></div>
+          <div className="bTop" />
         </body>
-      )
+      );
     } else {
       return (
         <body className="blogBody">
           <p>Blog mobile</p>
         </body>
-      )
+      );
     }
   }
 }

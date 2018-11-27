@@ -1,59 +1,63 @@
-.navHeader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  background-color: red;
-  width: 100vw;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
+@media only screen and (max-width: 600px) {
+  .navHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #d4dfc7;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
 
-.navHeader a {
-  font-size: 18px;
-  margin: 15px 20px 15px 10px;
-  padding: 0vh 10px 0vh 10px;
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  font-family: sans-serif;
-  letter-spacing: 1px;
+  .navHeader a {
+    font-size: 18px;
+    margin: 15px 20px 15px 10px;
+    padding: 0vh 10px 0vh 10px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
 
-}
+  .navHeader a::before,
+  .navHeader a::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 2px;
+    pointer-events: none;
+    background-color: #fff;
+    transition: width, opacity, background-color, -webkit-transform 500ms;
+    transition-duration: 500ms;
+    -webkit-transition: width, opacity, background-color,
+      -webkit-transform 500ms;
+    -webkit-transition-duration: 500ms;
+  }
 
-.navHeader a::before,
-.navHeader a::after {
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 2px;
-  pointer-events: none;
-  background-color: #fff;
-  -webkit-transition: width, opacity, background-color;
-  -webkit-transition-duration: 500ms;
-}
+  .navHeader a::before {
+    left: -3px;
+    top: -2px;
+  }
 
-.navHeader a::before {
-  left: -3px;
-  top: -2px;
+  .navHeader a::after {
+    right: 0;
+    top: -2px;
+  }
 
-}
-
-.navHeader a::after {
-  right: 0;
-  top: -2px;
-}
-
-.navHeader a:hover::before,
-.navHeader a:hover::after,
-.navHeader a:active::before,
-.navHeader a:active::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 3px);
-  opacity: 0.1;
-  pointer-events: none;
-  background-color: #6096BA;
+  .navHeader a:hover::before,
+  .navHeader a:hover::after,
+  .navHeader a:active::before,
+  .navHeader a:active::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 3px);
+    opacity: 0.1;
+    pointer-events: none;
+    background-color: #6096ba;
+  }
 }

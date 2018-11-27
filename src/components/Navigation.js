@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import * as routes from '../constants/Routes'
-import '../mobileCSS/NavMobile.css'
-import '../deskCSS/NavDesk.css'
+import React, { Component } from "react";
+import * as routes from "../constants/Routes";
+import "../mobileCSS/NavMobile.css";
+import "../deskCSS/NavDesk.css";
 
 export default class Navigation extends Component {
   render() {
@@ -11,7 +11,6 @@ export default class Navigation extends Component {
         <a href={routes.BLOG}> BLOG </a>
         <a href={routes.ABOUT}> ABOUT </a>
       </header>
-    )
+    );
   }
 }
-

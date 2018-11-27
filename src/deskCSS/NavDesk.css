@@ -1,12 +1,11 @@
 @media only screen and (min-width: 600px) {
-
   .navHeader {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: #D4DFC7;
+    background-color: #d4dfc7;
     width: 100vw;
     height: 75px;
     display: flex;
@@ -23,7 +22,6 @@
     color: #fff;
     font-family: sans-serif;
     letter-spacing: 10px;
-
   }
 
   .navHeader a::before,
@@ -41,7 +39,6 @@
   .navHeader a::before {
     left: -11px;
     top: -4px;
-
   }
 
   .navHeader a::after {
@@ -56,7 +53,6 @@
     width: calc(100% + 11px);
     opacity: 0.1;
     pointer-events: none;
-    background-color: #6096BA;
+    background-color: #6096ba;
   }
-
 }

@@ -11,46 +11,46 @@ export default class Blog extends Component {
             <div className="hoverPatty">
               <p className="hoverP">Patty's Ridge</p>
               <div className="pattyImg">
-                <img src="/blog/pattyfull.jpg" />
-                <img src="/blog/patty.jpg" />
-                <img src="/blog/pattytop.jpg" />
+                <img alt="" src="/blog/pattyfull.jpg" />
+                <img alt="" src="/blog/patty.jpg" />
+                <img alt="" src="/blog/pattytop.jpg" />
               </div>
             </div>
             <div className="hoverVector">
               <p className="hoverP">Vector Madness</p>
               <div className="vectorImg">
-                <img src="/blog/vectorbase.jpg" />
-                <img src="/blog/vectortraverse.jpg" />
-                <img src="/blog/vectortop.jpg" />
+                <img alt="" src="/blog/vectorbase.jpg" />
+                <img alt="" src="/blog/vectortraverse.jpg" />
+                <img alt="" src="/blog/vectortop.jpg" />
               </div>
             </div>
             <div className="hoverBuena">
               <p className="hoverP">Buena Vista</p>
               <div className="buenaImg">
-                <img src="/blog/buenavistafull.jpg" />
-                <img src="/blog/buenavistatop.jpg" />
+                <img alt="" src="/blog/buenavistafull.jpg" />
+                <img alt="" src="/blog/buenavistatop.jpg" />
               </div>
             </div>
             <div className="hoverSteort">
               <p className="hoverP">Steort's Ridge</p>
               <div className="steortImg">
-                <img src="/blog/steortbase.jpg" />
-                <img src="/blog/steortp3.jpg" />
+                <img alt="" src="/blog/steortbase.jpg" />
+                <img alt="" src="/blog/steortp3.jpg" />
               </div>
             </div>
             <div className="hoverStandard">
               <p className="hoverP">Standard Ridge</p>
               <div className="standardImg">
-                <img src="/blog/standardp3.jpg" />
-                <img src="/blog/standardlichen.jpg" />
-                <img src="/blog/standardtop.jpg" />
+                <img alt="" src="/blog/standardp3.jpg" />
+                <img alt="" src="/blog/standardlichen.jpg" />
+                <img alt="" src="/blog/standardtop.jpg" />
               </div>
             </div>
             <div className="hoverOutside">
               <p className="hoverP">Outside Corner</p>
               <div className="outsideImg">
-                <img src="/blog/outsidetop.jpg" />
-                <img src="/blog/outsidewave.jpg" />
+                <img alt="" src="/blog/outsidetop.jpg" />
+                <img alt="" src="/blog/outsidewave.jpg" />
               </div>
             </div>
           </div>

@@ -54,4 +54,5 @@
 
 .hRight {
   right: 5vw;
+  z-index: 1;
 }

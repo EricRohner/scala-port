@@ -39,10 +39,10 @@ export default class Home extends Component {
     });
   };
   handleOrientation = event => {
-    const widthSin = (event.gamma / 45) * 2 * 3.14;
-    const heightSin = (event.beta / 90) * 2 * 3.14;
+    const widthSin = (event.beta / 45) * 2 * 3.14;
+    const heightSin = (event.gamma / 90) * 2 * 3.14;
     const heightOffset = window.innerHeight / 10;
-    const widthOffset = window.innerWidth / 10;
+    const widthOffset = window.innerWidth / 10 + 10;
     const iw = window.innerWidth / 100;
     const ih = window.innerHeight / 100;
 
@@ -123,13 +123,9 @@ export default class Home extends Component {
       );
       return (
         <body className="home">
-          <div className="hLeft" />
-          <div className="hRight" />
-          <div className="hTop" />
-          <div className="hBottom" />
-
           <img
             src="/home/MobileLayer1.png"
+            className="hBG"
             alt=""
             style={{
               position: "absolute",
@@ -141,6 +137,7 @@ export default class Home extends Component {
           />
           <img
             src="/home/MobileLayer2.png"
+            className="hBG"
             alt=""
             style={{
               position: "absolute",
@@ -152,6 +149,7 @@ export default class Home extends Component {
           />
           <img
             src="/home/MobileLayer3.png"
+            className="hBG"
             alt=""
             style={{
               position: "absolute",
@@ -161,6 +159,10 @@ export default class Home extends Component {
               width: "75vw"
             }}
           />
+          <div className="hLeft" />
+          <div className="hRight" />
+          <div className="hTop" />
+          <div className="hBottom" />
           <img
             src="/home/MobileLayer4.png"
             className="tree"

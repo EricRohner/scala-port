@@ -39,8 +39,8 @@ export default class Home extends Component {
     });
   };
   handleOrientation = event => {
-    const widthSin = (event.beta / 45) * 2 * 3.14;
-    const heightSin = (event.gamma / 90) * 2 * 3.14;
+    const widthSin = (event.gamma / 90) * 2 * 3.14;
+    const heightSin = (event.beta / 90) * 2 * 3.14;
     const heightOffset = window.innerHeight / 10;
     const widthOffset = window.innerWidth / 10 + 10;
     const iw = window.innerWidth / 100;

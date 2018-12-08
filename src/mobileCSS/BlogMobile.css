@@ -1,3 +1,146 @@
 .blogBody {
-  margin-top: 50px;
+  padding: 0;
+  margin: 0;
+  top: 50px;
+  left: 0px;
+  position: absolute;
+  background: #d4dfc7;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bLeft,
+.bTop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+
+.bTop {
+  padding: 0;
+  height: 25px;
+  width: 100vw;
+  z-index: 0;
+}
+
+.bLeft {
+  height: 100vh;
+  width: 100px;
+  left: 25px;
+  z-index: 1;
+}
+
+.hoverP {
+  font-size: 12px;
+}
+
+.hoverP::before,
+.hoverP::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  height: 35px;
+  width: 100%;
+  background: #6096ba;
+  pointer-events: none;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: opacity, transform;
+  -webkit-transition-duration: 350ms, 1000ms;
+}
+
+.hoverP::before {
+  left: 0;
+  -webkit-transform: translate(0px, -10px);
+  opacity: 0;
+}
+
+.hoverP::after {
+  right: 0;
+  -webkit-transform: translate(0px, -10px);
+  opacity: 0;
+}
+
+.hoverP:hover::before {
+  left: 0;
+  -webkit-transform: translate(5px, -15px);
+  opacity: 0.2;
+}
+
+.hoverP:hover::after {
+  left: 0;
+  -webkit-transform: translate(-5px, -5px);
+  opacity: 0.2;
+}
+
+.hoverPatty,
+.hoverBuena,
+.hoverSteort,
+.hoverVector,
+.hoverStandard,
+.hoverOutside {
+  -webkit-transform: translate(0vw, 10vh);
+  height: 20px;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #274c77;
+}
+
+.pattyImg,
+.buenaImg,
+.steortImg,
+.vectorImg,
+.standardImg,
+.outsideImg {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  left: 160px;
+  pointer-events: none;
+  opacity: 0;
+  width: 100vw;
+  -webkit-transition-property: opacity;
+  -webkit-transition-delay: 250ms;
+  -webkit-transition-duration: 500ms;
+}
+
+.vectorImg {
+  -webkit-transform: translate(0vw, -35px);
+}
+
+.buenaImg {
+  -webkit-transform: translate(0vw, -70px);
+}
+
+.steortImg {
+  -webkit-transform: translate(0vw, -105px);
+}
+
+.standardImg {
+  -webkit-transform: translate(0vw, -140px);
+}
+
+.outsideImg {
+  -webkit-transform: translate(0vw, -175px);
+}
+
+.pattyImg img,
+.buenaImg img,
+.steortImg img,
+.vectorImg img,
+.standardImg img,
+.outsideImg img {
+  margin-left: 10px;
+}
+
+.hoverPatty:hover .pattyImg,
+.hoverBuena:hover .buenaImg,
+.hoverSteort:hover .steortImg,
+.hoverVector:hover .vectorImg,
+.hoverStandard:hover .standardImg,
+.hoverOutside:hover .outsideImg {
+  opacity: 1;
 }

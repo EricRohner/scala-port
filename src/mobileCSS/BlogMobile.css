@@ -7,7 +7,6 @@
   background: #d4dfc7;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 .bTop {
@@ -73,7 +72,6 @@
 .hoverOutside {
   height: 20px;
   position: relative;
-  width: 100%;
   text-align: center;
   color: #274c77;
   display: flex;
@@ -88,8 +86,9 @@
 .outsideImg {
   position: absolute;
   display: flex;
-  top: 0px;
-  left: 160px;
+  flex-direction: column;
+  top: 60px;
+  left: 0px;
   pointer-events: none;
   opacity: 0;
   width: 100vw;
@@ -99,23 +98,23 @@
 }
 
 .vectorImg {
-  -webkit-transform: translate(0vw, -35px);
+  -webkit-transform: translate(-16vw, 0px);
 }
 
 .buenaImg {
-  -webkit-transform: translate(0vw, -70px);
+  -webkit-transform: translate(-33vw, 0px);
 }
 
 .steortImg {
-  -webkit-transform: translate(0vw, -105px);
+  -webkit-transform: translate(-49vw, 0px);
 }
 
 .standardImg {
-  -webkit-transform: translate(0vw, -140px);
+  -webkit-transform: translate(-64vw, 0px);
 }
 
 .outsideImg {
-  -webkit-transform: translate(0vw, -175px);
+  -webkit-transform: translate(-81vw, 0px);
 }
 
 .pattyImg img,
@@ -124,7 +123,6 @@
 .vectorImg img,
 .standardImg img,
 .outsideImg img {
-  margin-left: 10px;
 }
 
 .hoverPatty:hover .pattyImg,

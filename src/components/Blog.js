@@ -61,7 +61,7 @@ export default class Blog extends Component {
     } else {
       return (
         <body className="blogBody">
-          <div className="bLeft">
+          <div className="bTop">
             <div className="hoverPatty">
               <p className="hoverP">Patty's Ridge</p>
               <div className="pattyImg">
@@ -108,7 +108,6 @@ export default class Blog extends Component {
               </div>
             </div>
           </div>
-          <div className="bTop" />
         </body>
       );
     }

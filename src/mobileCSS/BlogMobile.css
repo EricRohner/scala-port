@@ -10,29 +10,20 @@
   overflow: hidden;
 }
 
-.bLeft,
 .bTop {
   position: absolute;
-  top: 0px;
-  left: 0px;
   background-color: white;
-}
-
-.bTop {
   padding: 0;
-  height: 25px;
+  height: 50px;
   width: 100vw;
-  z-index: 0;
-}
-
-.bLeft {
-  height: 100vh;
-  width: 100px;
-  left: 25px;
-  z-index: 1;
+  z-index: 2;
+  display: flex;
 }
 
 .hoverP {
+  margin-top: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
   font-size: 12px;
 }
 
@@ -52,25 +43,25 @@
 
 .hoverP::before {
   left: 0;
-  -webkit-transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, 0px);
   opacity: 0;
 }
 
 .hoverP::after {
   right: 0;
-  -webkit-transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, 0px);
   opacity: 0;
 }
 
 .hoverP:hover::before {
   left: 0;
-  -webkit-transform: translate(5px, -15px);
+  -webkit-transform: translate(2px, 6px);
   opacity: 0.2;
 }
 
 .hoverP:hover::after {
   left: 0;
-  -webkit-transform: translate(-5px, -5px);
+  -webkit-transform: translate(-2px, 10px);
   opacity: 0.2;
 }
 
@@ -80,13 +71,13 @@
 .hoverVector,
 .hoverStandard,
 .hoverOutside {
-  -webkit-transform: translate(0vw, 10vh);
   height: 20px;
-  margin-top: 10px;
   position: relative;
   width: 100%;
   text-align: center;
   color: #274c77;
+  display: flex;
+  flex-direction: row;
 }
 
 .pattyImg,

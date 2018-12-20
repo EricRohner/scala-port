@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import * as routes from "../constants/Routes";
+import * as routes from "../constants/routes";
 import Navigation from "./Navigation";
 import Home from "./Home";
 import Blog from "./Blog";

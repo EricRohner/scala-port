@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as routes from "../constants/Routes";
+import * as routes from "../constants/routes";
 import "../mobileCSS/NavMobile.css";
 import "../deskCSS/NavDesk.css";
 

@@ -99,7 +99,8 @@
     left: 160px;
     pointer-events: none;
     opacity: 0;
-    width: 100vw;
+    width: 50vw;
+    height: scale;
     -webkit-transition-property: opacity;
     -webkit-transition-delay: 250ms;
     -webkit-transition-duration: 500ms
